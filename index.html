@@ -5,22 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JLG Consultoria em Licitações</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background-color: #F5F5DC; <!-/#600000, #721e13->;
+      background-color: #F5F5DC; /* cor de fundo clara */
       font-family: Arial, sans-serif;
-      color: #000000; <!- letra->;
+      color: #000000; /* cor da letra */
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
+      padding-bottom: 60px; /* espaço para o rodapé fixo */
     }
 
     img {
       max-width: 400px;
       height: auto;
+      margin-top: 40px;
       margin-bottom: 20px;
     }
 
@@ -53,8 +58,6 @@
     .whatsapp-link img {
       height: 28px;
       margin-right: 8px;
-      color: #000000;
-
     }
 
     p {
@@ -73,10 +76,24 @@
       cursor: pointer;
       text-decoration: none;
       transition: 0.3s;
+      margin-bottom: 40px;
     }
 
     .btn-email:hover {
       background-color: #ffaa00;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #e0e0b0;
+      color: #000000;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1em;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
@@ -89,7 +106,8 @@
   <div class="contact-info">
     <div class="email">📧 licitacoes@jlglicitacoes.com.br</div>
     <a href="https://wa.me/5519971524630" class="whatsapp-link" target="_blank">
-    <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000/whatsapp.png" alt="WhatsApp">Clique aqui e fale via WhatsApp
+      <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="WhatsApp">
+      Clique aqui e fale via WhatsApp
     </a>
   </div>
 
@@ -98,6 +116,10 @@
   <a href="mailto:licitacoes@jlglicitacoes.com.br?subject=Contato%20via%20site%20JLG&body=Olá%2C%20gostaria%20de%20mais%20informações." class="btn-email">
     Entrar em contato
   </a>
+
+  <footer>
+    Escritório: Indaiatuba-SP, Fone (19) 97152-4630
+  </footer>
 
 </body>
 </html>
