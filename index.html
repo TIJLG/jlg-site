@@ -2,90 +2,63 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JLG Consultoria em Licitação</title>
   <style>
     body {
-      background-color: #D2B48C; /* Marrom bem mais suave (tan) */
       margin: 0;
-      padding: 0;
+      background-color: #600000; /* Bordô escuro */
       font-family: Arial, sans-serif;
-    }
-
-    .container {
+      color: #ffcc00; /* Amarelo ouro */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      padding: 100px 20px;
     }
 
-    .logo {
+    img {
       max-width: 400px;
-      width: 100%;
       height: auto;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      color: #8B4513; /* Marrom escuro para contraste com fundo claro */
-      font-size: 36px;
+      font-size: 2.5em;
       margin-bottom: 10px;
     }
 
     p {
-      color: #4B3621;
-      font-size: 20px;
+      font-size: 1.2em;
+      margin-bottom: 30px;
     }
 
-    form {
-      margin-top: 30px;
-    }
-
-    input, textarea {
-      width: 100%;
-      max-width: 400px;
-      padding: 10px;
-      margin: 10px auto;
-      display: block;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-
-    button {
-      padding: 12px 25px;
-      background-color: #8B4513;
-      color: #fff;
+    .btn-email {
+      background-color: #ffcc00;
+      color: #600000;
+      padding: 15px 30px;
       border: none;
-      border-radius: 5px;
-      font-size: 18px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      font-weight: bold;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: 0.3s;
+      text-decoration: none;
     }
 
-    button:hover {
-      background-color: #A0522D;
-    }
-
-    .success-message {
-      color: green;
-      font-size: 18px;
-      margin-top: 20px;
+    .btn-email:hover {
+      background-color: #ffaa00;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="fig_01.jpg" alt="Logo JLG" class="logo">
-    <h1>JLG Consultoria em Licitação</h1>
-    <p>Especialistas em assessoria para vencer licitações públicas.</p>
 
-    <form action="https://formsubmit.co/licitacoes@jlglicitacoes.com.br" method="POST">
-      <input type="hidden" name="_next" value="https://jlglicitacoes.com.br/sucesso.html">
-      <input type="text" name="name" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar mensagem</button>
-    </form>
-  </div>
+  <img src="fig_01.jpg" alt="Logo da JLG Consultoria em Licitação">
+  <h1>Bem-vindo à JLG Consultoria em Licitação</h1>
+  <p>Especialistas em processos licitatórios e assessoria jurídica.</p>
+  
+  <a href="mailto:licitacoes@jlglicitacoes.com.br" class="btn-email">Entrar em contato</a>
+
 </body>
 </html>
-
